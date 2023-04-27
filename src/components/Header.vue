@@ -93,7 +93,6 @@ export default {
   },
   methods: {
     toggleMobileMenu() {
-      console.log(this.isMobileMenuOpen);
       this.isMobileMenuOpen = !this.isMobileMenuOpen
     },
   },
