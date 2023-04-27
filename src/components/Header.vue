@@ -7,7 +7,7 @@
         </a>
 
         <div class="wrapper">
-          <a href="#" class="nav-item"> About </a>
+          <a href="#onboard" class="nav-item"> About </a>
 
           <span to="#" class="nav-item box">
             <p>Schools

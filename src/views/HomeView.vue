@@ -8,6 +8,7 @@ import Onboard from "../components/Onboard.vue";
 import Discover from "../components/Discover.vue";
 import Partner from "../components/Partner.vue";
 import Foster from "../components/Foster.vue";
+import Testimonials from "../components/Testimonials.vue";
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import Foster from "../components/Foster.vue";
     <Onboard />
     <Discover />
     <Foster />
+    <Testimonials />
     <Partner />
   </main>
   <Footer />
