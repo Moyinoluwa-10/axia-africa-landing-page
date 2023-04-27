@@ -1,15 +1,99 @@
-<template></template>
+<template>
+  <nav>
+    <div class="container container--1">
+      <header class="container">
+        <a href="/" class="logo-box">
+          <img src="../assets/svgs/logo.a67befb6.svg" alt="logo">
+        </a>
+
+        <div class="wrapper">
+          <a href="#" class="nav-item"> About </a>
+
+          <span to="#" class="nav-item box">
+            <p>Schools
+              <ion-icon name=" chevron-down-sharp" class="icon"></ion-icon>
+            </p>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <a href="#"> School of Product</a>
+                    <a href="#"> School of Engineering </a>
+                    <a href="#"> School of Data</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+
+          <button to="#" class="nav-item"> Join Our Community </button>
+
+          <span class="nav-item cont">
+            <p>Help
+              <ion-icon name="chevron-down-sharp" class="icon"></ion-icon>
+            </p>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <a href="#"> FAQs </a>
+                    <span> Contact Us </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+
+        <div class="btn-box">
+          <a href="#" class="btn"> Apply Now </a>
+        </div>
+
+        <div class="hamburger" @click="toggleMobileMenu">
+          <ion-icon :name="isMobileMenuOpen ? 'close-outline' : 'menu-outline'" class="ham-icon btn-1"></ion-icon>
+
+        </div>
+      </header>
+
+      <div :class="isMobileMenuOpen ? 'navbar active' : 'navbar'">
+        <div class="navbar-box">
+          <div>
+            <h1> SCHOOLS </h1>
+            <a href="#"> School of Product</a>
+            <a href="#"> School of Data </a>
+            <a href="#"> School of Engineering </a>
+          </div>
+
+          <div>
+            <h1 class="font-bold"> COMPANY </h1>
+            <a aria-current="page" href="/#onboard"> About </a>
+            <a href="#"> FAQs</a>
+            <span to="#"> Join the Community </span>
+            <a href="#"> Partnership </a>
+          </div>
+
+          <div>
+            <h1> HELP </h1>
+            <a href="#">axiaafrica@gmail.com</a>
+            <a href="#">09015558035</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
 
 <script>
 export default {
   name: 'Header',
-  // data() {
-  //   return {
-  //     isMobileMenuOpen: false,
-  //   }
-  // },
+  data() {
+    return {
+      isMobileMenuOpen: false,
+    }
+  },
   methods: {
     toggleMobileMenu() {
+      console.log(this.isMobileMenuOpen);
       this.isMobileMenuOpen = !this.isMobileMenuOpen
     },
   },
@@ -18,156 +102,312 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
+.icon {
+  font-size: 15px;
+}
+
+.ham-icon {
+  font-size: 35px;
+}
+
+nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 252, 249);
+  z-index: 20;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 101px;
+  color: #000;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container--1 {
+  padding: 0 150px;
+  width: 100%;
+}
+
+header {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 53px;
+}
+
+header .logo-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo-box img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  gap: 1.75rem;
+  align-self: center;
+}
+
+.nav-item {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.box {
+  cursor: pointer;
+}
+
+.box p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box>div>div {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  display: none;
+}
+
+.box:hover>div>div {
+  display: block;
+}
+
+.box>div>div>div {
+  background: #fffcf9;
+  box-shadow: 0 4px 20px #0000001a;
+  min-width: 1rem;
+  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all .15s;
+}
+
+.box>div>div>div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.box>div>div>div>div>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper>button {
+  cursor: pointer;
+  appearance: button;
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  outline: none;
+}
+
+.cont {
+  cursor: pointer;
+}
+
+.cont p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cont>div {
+  position: relative;
+}
+
+.cont>div>div {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  display: none;
+}
+
+.cont:hover>div>div {
+  display: block;
+}
+
+.cont>div>div>div {
+  background: #fffcf9;
+  box-shadow: 0 4px 20px #0000001a;
+  min-width: 1rem;
+  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  transition: all .15s;
+}
+
+.cont>div>div>div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.cont>div>div>div>div>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.btn-box {
+  display: flex;
+  gap: 0.75rem;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 50px;
+}
+
+.btn {
+  color: #202054;
+  box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #202054;
+  border: 3px solid #000;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all .15s;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #202054;
+  box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #f0b73f;
+}
+
+.navbar {
+  display: none;
+  position: fixed;
+  background: #fff;
   width: 100%;
-  font-family: U8-Bold, sans-serif;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 5rem;
+  padding: 5rem 1.25rem 0;
 }
 
-.navbar h1 {
-  font-size: 25px;
-  line-height: 40px;
-  color: var(--black);
+.navbar-box {
+  display: grid;
+  gap: 1rem;
+  row-gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 45px;
 }
 
-#dark .navbar h1 {
-  color: var(--white);
-}
-
-.navbar .nav-menu {
-  list-style-type: none;
+.navbar-box>div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 30px;
 }
 
-.navbar .nav-link {
+.navbar-box>div h1 {
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Avenir", sans-serif;
+}
+
+.navbar-box>div a {
+  color: #000;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
   text-decoration: none;
-  color: var(--black);
-  position: relative;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-family: U8, sans-serif;
-  letter-spacing: 1px;
 }
 
-#dark .navbar .nav-link {
-  color: var(--white);
-}
 
-.navbar .nav-link::before {
-  content: "";
-  transition: all 0.3s ease;
-  height: 2px;
-  border-radius: 5%;
-  position: absolute;
-  background-color: var(--black);
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: top center;
-  left: 0;
-  bottom: -5px;
-}
 
-#dark .navbar .nav-link::before {
-  background-color: var(--white);
-}
-
-.navbar .nav-link:hover::before {
-  transform: scaleX(1);
-}
-
-/* Hamburger Styling */
-.navbar .hamburger {
-  display: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 7;
-}
-
-.navbar .bar {
-  display: block;
-  width: 26px;
-  height: 3px;
-  margin: 5px 0;
-  -webkit-transition: transform 0.15s ease;
-  transition: transform 0.15s ease;
-  background-color: var(--dark-bg);
-  border-radius: 4px;
-}
-
-#dark .navbar .bar {
-  background-color: var(--white);
-}
-
-.navbar .bar:nth-child(2) {
-  width: 42px;
-}
-
-.navbar .bar:nth-child(3) {
-  width: 34px;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 25px 30px;
+@media screen and (max-width:1024px) {
+  .container {
+    max-width: 900px;
   }
 
-  .navbar .nav {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100vh;
-    z-index: 5;
-    transition: all 1s ease;
+
+  .wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .container {
+    max-width: 700px;
   }
 
-  .navbar .nav.active {
-    left: 0;
+
+}
+
+@media screen and (max-width:768px) {
+  nav {
+    height: unset;
   }
 
-  .navbar .nav .nav-menu {
-    transition: all 1s ease;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    background-color: var(--light-bg);
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    transition: all 1s ease;
+  header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .05);
+    padding: 0 1.25rem;
   }
 
-  #dark .navbar .nav-menu {
-    background-color: var(--dark-bg);
+  header .logo-box img {
+    width: 78px;
   }
 
-  .navbar li a {
-    font-weight: 900;
-    font-family: "U8-Bold", sans-serif;
+  .container--1 {
+    padding: 0;
   }
 
-  .navbar .hamburger {
+
+  .nav-item {
+    font-size: .75rem;
+    line-height: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .btn-box {
+    display: none;
+  }
+
+  .navbar.active {
     display: block;
-  }
-
-  .navbar .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .navbar .hamburger.active .bar:nth-child(1) {
-    opacity: 1;
-    transform: translateY(8px) rotate(135deg);
-  }
-
-  .navbar .hamburger.active .bar:nth-child(3) {
-    opacity: 1;
-    transform: translateY(-8px) rotate(-135deg);
   }
 }
 </style>

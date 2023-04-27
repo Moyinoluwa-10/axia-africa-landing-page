@@ -6,16 +6,20 @@ import Courses from "../components/Courses.vue";
 import Speak from "../components/Speak.vue";
 import Onboard from "../components/Onboard.vue";
 import Discover from "../components/Discover.vue";
+import Partner from "../components/Partner.vue";
+import Foster from "../components/Foster.vue";
 </script>
 
 <template>
   <Header />
-  <main>
+  <main style="padding-top: 7rem;">
     <Hero />
     <Courses />
     <Speak />
     <Onboard />
     <Discover />
+    <Foster />
+    <Partner />
   </main>
   <Footer />
 </template>
