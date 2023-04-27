@@ -5,34 +5,34 @@
       schools that we offer. Enroll and kickstart your tech career.
     </p>
     <div class="wrapper">
-      <article class="card"><img src="../assets/images/course1.png" alt="image" class="md:h-[233px] h-[141px]">
-        <div class="card-box md:p-5 p-3.5">
-          <h3 class="text-lg md:text-[22px] text-darkish font-semibold">Product Design</h3>
-          <p class="text-sm md:text-base text-darkgrey font-medium mt-3 text-[#3F3F3F]">Design user
+      <article class="card"><img class="card-image" src="../assets/images/course1.png" alt="image">
+        <div class="card-box">
+          <h3>Product Design</h3>
+          <p>Design user
             experiences for products in today’s digital world. Build a portfolio that showcases your ability to transform
-            products.</p><a href="/enroll/product_designer"
-            class="btn flex gap-3 text-primary pl-0 mt-4 hover:gap-5 transite"><span class="underline">
-              Enroll Now <i class="fa-solid fa-arrow-right"></i> <img src="../" alt="arrow-right" /></span></a>
+            products.</p><a href="#"><span>
+              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span></a>
         </div>
       </article>
-      <article class="card"><img src="../assets/images/course2.png" alt="image" class="md:h-[233px] h-[141px]">
-        <div class="card-box md:p-5 p-3.5">
-          <h3 class="text-lg md:text-[22px] text-darkish font-semibold">Data Analytics</h3>
-          <p class="text-sm md:text-base text-darkgrey font-medium mt-3 text-[#3F3F3F]">Use Python,
+      <article class="card"><img class="card-image" src="../assets/images/course2.png" alt="image">
+        <div class="card-box">
+          <h3>Data Analytics</h3>
+          <p>Use Python,
             SQL, and statistics to uncover insights, communicate critical findings, and create data-driven solutions</p><a
-            href="/enroll/data_analyst" class="btn flex gap-3 text-primary pl-0 mt-4 hover:gap-5 transite"><span
-              class="underline">
-              Enroll Now </span></a>
+            href="#"><span>
+              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span></a>
         </div>
       </article>
-      <article class="card"><img src="../assets/images/course3.png" alt="image" class="md:h-[233px] h-[141px]">
-        <div class="card-box md:p-5 p-3.5">
-          <h3 class="text-lg md:text-[22px] text-darkish font-semibold">Front-End Development</h3>
-          <p class="text-sm md:text-base text-darkgrey font-medium mt-3 text-[#3F3F3F]">Begin our
+      <article class="card"><img class="card-image" src="../assets/images/course3.png" alt="image">
+        <div class="card-box">
+          <h3>Front-End Development</h3>
+          <p>Begin our
             front-end development program structured to help students launch a new career in web development.</p><a
-            href="/enroll/frontend_developer" class="btn flex gap-3 text-primary pl-0 mt-4 hover:gap-5 transite"><span
-              class="underline">
-              Enroll Now </span></a>
+            href="#"><span>
+              Enroll Now
+              <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+            </span>
+          </a>
         </div>
       </article>
     </div>
@@ -42,7 +42,6 @@
 <script>
 export default {
   name: "Courses"
-
 }
 </script>
 
@@ -99,10 +98,9 @@ p {
   z-index: -1;
 }
 
-img {
+.card-image {
   height: 233px;
   max-width: 100%;
-  /* display: block; */
   vertical-align: middle;
 }
 
@@ -135,6 +133,25 @@ img {
   line-height: 1.5rem;
   padding: 0.75rem 1.5rem;
   padding-left: 0;
+  transition: all 0.2s;
+}
+
+.card-box a span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.card-box a:hover span {
+  gap: 15px;
+}
+
+.icon {
+  display: inline-block;
+  color: #202054;
+  font-size: 25px;
+  --ionicon-stroke-width: 8px;
 }
 
 
@@ -166,7 +183,7 @@ img {
     line-height: 1.5rem;
   }
 
-  img {
+  .card-image {
     height: 141px;
   }
 
@@ -184,8 +201,6 @@ img {
   }
 
 }
-
-
 
 @media screen and (max-width:640px) {
   .wrapper {

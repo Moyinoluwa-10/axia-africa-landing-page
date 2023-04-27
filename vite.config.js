@@ -6,6 +6,11 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  vueCompilerOptions: {
+    isCustomElement: (tag) => {
+      return tag.startsWith('ion-')
+    }
+  },
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
