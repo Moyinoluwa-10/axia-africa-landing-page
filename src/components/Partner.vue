@@ -81,6 +81,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 0 1.25rem;
+  }
+
   .deco {
     display: none;
   }

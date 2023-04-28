@@ -1,7 +1,7 @@
 <template>
-  <nav>
-    <div class="container container--1">
-      <header class="container">
+  <nav class="nav">
+    <div class="container pad-cont section-container">
+      <header class="container header">
         <a href="/" class="logo-box">
           <img src="../assets/svgs/logo.a67befb6.svg" alt="logo" />
         </a>
@@ -12,7 +12,7 @@
           <span to="#" class="nav-item box">
             <p>
               Schools
-              <ion-icon name=" chevron-down-sharp" class="icon"></ion-icon>
+              <ion-icon name="chevron-down-sharp" class="icon"></ion-icon>
             </p>
             <div>
               <div>
@@ -48,13 +48,13 @@
         </div>
 
         <div class="btn-box">
-          <a href="#" class="btn"> Apply Now </a>
+          <a href="#" class="btn btn-primary"> Apply Now </a>
         </div>
 
         <div class="hamburger" @click="toggleMobileMenu">
           <ion-icon
             :name="isMobileMenuOpen ? 'close-outline' : 'menu-outline'"
-            class="ham-icon btn-1"
+            class="ham-icon"
           ></ion-icon>
         </div>
       </header>
@@ -89,7 +89,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HeaderSection',
   data() {
     return {
       isMobileMenuOpen: false
@@ -109,10 +109,10 @@ export default {
 }
 
 .ham-icon {
-  font-size: 35px;
+  font-size: 30px;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,17 +126,7 @@ nav {
   color: #000;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.container--1 {
-  padding: 0 150px;
-  width: 100%;
-}
-
-header {
+.header {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
   display: flex;
   justify-content: space-between;
@@ -144,13 +134,13 @@ header {
   height: 53px;
 }
 
-header .logo-box {
+.header .logo-box {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-header .logo-box img {
+.header .logo-box img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -299,14 +289,6 @@ header .logo-box img {
   color: #202054;
   box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #202054;
   border: 3px solid #000;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  transition: all 0.15s;
-  cursor: pointer;
-  background: transparent;
-  text-decoration: none;
 }
 
 .btn:hover {
@@ -356,8 +338,8 @@ header .logo-box img {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
-    max-width: 900px;
+  .section-container {
+    padding: 0 150px;
   }
 
   .wrapper {
@@ -365,27 +347,25 @@ header .logo-box img {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    max-width: 700px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  nav {
+  .nav {
     height: unset;
   }
 
-  header {
+  .section-container {
+    padding: 0 1.25rem;
+  }
+
+  .header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     padding: 0 1.25rem;
   }
 
-  header .logo-box img {
+  .header .logo-box img {
     width: 78px;
   }
 
-  .container--1 {
+  .section-container {
     padding: 0;
   }
 

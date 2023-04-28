@@ -1,5 +1,6 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+// eslint-disable-next-line no-unused-vars
+import { RouterView } from 'vue-router'
 </script>
 
 <template>

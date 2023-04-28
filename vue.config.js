@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 module.exports = {
   chainWebpack: (config) => {
     config.module

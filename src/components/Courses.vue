@@ -1,7 +1,7 @@
 <template>
-  <section class="container">
-    <h1>Courses for you</h1>
-    <p>
+  <section class="container pad-cont section-container">
+    <h1 class="primary-heading heading">Courses for you</h1>
+    <p class="paragraph primary-paragraph">
       Here are some courses from our schools that we offer. Enroll and kickstart your tech career.
     </p>
     <div class="wrapper">
@@ -55,29 +55,21 @@
 
 <script>
 export default {
-  name: 'Courses'
+  name: 'CoursesSection'
 }
 </script>
 
 <style scoped>
-.container {
-  padding: 0 150px;
-  max-width: 1280px;
-  margin: 0 auto;
+.section-container {
   margin-top: 7rem;
   margin-bottom: 10rem;
 }
 
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.heading {
   color: #111;
-  font-weight: 500;
 }
 
-p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.paragraph {
   color: #3f3f3f;
   max-width: 478px;
   margin-top: 1.25rem;
@@ -169,28 +161,13 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 1.25rem;
-    max-width: 900px;
-  }
-
   .wrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (max-width: 900px) {
-  .container {
-    max-width: 700px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  p {
+  .paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
   }

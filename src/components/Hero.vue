@@ -1,46 +1,41 @@
 <template>
-  <section class="container">
-    <h1>Accelerate your career with <span class="grad">Job-ready</span> tech skills.</h1>
-    <p>
+  <section class="container pad-cont section-container">
+    <h1 class="heading">
+      Accelerate your career with <span class="grad">Job-ready</span> tech skills.
+    </h1>
+    <p class="paragraph primary-paragraph">
       Begin your tech journey and expand your career opportunities in the tech space by learning
       tech skills in demand.
     </p>
     <div class="links">
-      <a href="#"> Apply Now </a
+      <a href="#" class="btn btn-primary"> Apply Now </a
       ><button>
-        <span class="underline">Speak with an Advisor</span
+        <span>Speak with an Advisor</span
         ><ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
       </button>
     </div>
-    <img
-      src="../assets/svgs/doddle.efbf3eb9.svg"
-      class="bounce"
-      alt="grountsssssssssssssssssssssssssssssss"
-    /><img
+    <img src="../assets/svgs/doddle.efbf3eb9.svg" class="bounce" alt="grounts" /><img
       src="../assets/svgs/hero.0d0e9f28.svg"
       class="hero-image"
-      alt="grountsssssssssssssssssssssssssssssss"
+      alt="grounts"
     />
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'HeroSection'
 }
 </script>
 
 <style scoped>
-.container {
-  padding: 0 150px;
-  margin: 0 auto;
+.section-container {
   margin-top: 5rem;
-  max-width: 1280px;
   position: relative;
   height: 700px;
 }
 
-h1 {
+.heading {
   font-size: 45px;
   text-align: start;
   color: #111;
@@ -55,7 +50,7 @@ h1 {
   -webkit-background-clip: text;
 }
 
-p {
+.paragraph {
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-align: start;
@@ -71,22 +66,13 @@ p {
   margin-top: 3rem;
 }
 
-.links a {
+.links .btn {
   color: #111;
   box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #202054;
   border: 3px solid #000;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  transition: all 0.15s;
-  cursor: pointer;
-  background: transparent;
-  text-decoration: none;
-  width: max-content;
 }
 
-.links a:hover {
+.links .btn:hover {
   color: #fff;
   background: #202054;
   box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #f0b73f;
@@ -161,32 +147,19 @@ p {
   display: block;
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 1.25rem;
-    max-width: 900px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    max-width: 700px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .container {
+  .section-container {
     height: auto;
   }
 
-  h1 {
+  .heading {
     font-size: 32px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
   }
 
-  p {
+  .paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-top: 0.625rem;

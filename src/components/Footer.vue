@@ -1,6 +1,6 @@
 <template>
-  <footer id="footer">
-    <div class="container">
+  <footer id="footer" class="footer">
+    <div class="container pad-cont section-container">
       <div class="box--1">
         <img src="../assets/svgs/logo-white.4357a423.svg" alt="logo" />
         <p>
@@ -88,12 +88,12 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'FooterSection'
 }
 </script>
 
 <style scoped>
-footer {
+.footer {
   padding: 6rem 1.25rem 3.5rem;
   background: #202054;
   align-items: center;
@@ -104,16 +104,12 @@ footer {
   margin: 0 auto;
 }
 
-.container {
+.section-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   color: #fff;
-  padding: 0 150px;
-  gap: 1.25rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  gap: 1.4rem;
 }
 
 .bottom {
@@ -222,7 +218,7 @@ footer {
   display: flex;
   gap: 30px;
   flex-direction: column;
-  width: 15%;
+  width: 20%;
 }
 
 .box--3 span {
@@ -242,7 +238,7 @@ footer {
   display: flex;
   gap: 30px;
   flex-direction: column;
-  width: 20%;
+  width: 15%;
 }
 
 .box--4 span {
@@ -258,21 +254,8 @@ footer {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 1.25rem;
-    max-width: 900px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    max-width: 700px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  footer {
+  .footer {
     padding: 3rem 1.25rem 3rem;
   }
 
