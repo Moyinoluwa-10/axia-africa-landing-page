@@ -6,7 +6,7 @@
         <img src="../assets/images/foster.96ed8018.png" alt="foster" class="desktop image" /><img
           src="../assets/images/foster-sm.b91531e9.png"
           alt="foster"
-          class="mobile"
+          class="mobile image"
         />
         <p class="paragraph primary-paragraph">
           Don’t just wait around, Register and join our students ready to enroll and kick start

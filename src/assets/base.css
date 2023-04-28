@@ -35,6 +35,7 @@ body {
   font-family: 'Avenir', sans-serif;
   background-color: #fffcf9;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container {
