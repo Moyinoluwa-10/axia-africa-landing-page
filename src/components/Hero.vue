@@ -1,20 +1,32 @@
 <template>
   <section class="container">
-    <h1>
-      Accelerate your career with <span class="grad">Job-ready</span> tech skills. </h1>
-    <p> Begin your
-      tech journey and expand your career opportunities in the tech space by learning tech skills in demand. </p>
+    <h1>Accelerate your career with <span class="grad">Job-ready</span> tech skills.</h1>
+    <p>
+      Begin your tech journey and expand your career opportunities in the tech space by learning
+      tech skills in demand.
+    </p>
     <div class="links">
-      <a href="#"> Apply Now </a><button><span class="underline">Speak
-          with an Advisor</span><ion-icon name="arrow-forward-outline" class="icon"></ion-icon></button>
-    </div><img src="../assets/svgs/doddle.efbf3eb9.svg" class="bounce" alt="grountsssssssssssssssssssssssssssssss"><img
-      src="../assets/svgs/hero.0d0e9f28.svg" class="hero-image" alt="grountsssssssssssssssssssssssssssssss">
+      <a href="#"> Apply Now </a
+      ><button>
+        <span class="underline">Speak with an Advisor</span
+        ><ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
+      </button>
+    </div>
+    <img
+      src="../assets/svgs/doddle.efbf3eb9.svg"
+      class="bounce"
+      alt="grountsssssssssssssssssssssssssssssss"
+    /><img
+      src="../assets/svgs/hero.0d0e9f28.svg"
+      class="hero-image"
+      alt="grountsssssssssssssssssssssssssssssss"
+    />
   </section>
 </template>
 
 <script>
 export default {
-  name: "Hero",
+  name: 'Hero'
 }
 </script>
 
@@ -67,7 +79,7 @@ p {
   font-weight: 600;
   line-height: 1.5rem;
   padding: 0.75rem 1.5rem;
-  transition: all .15s;
+  transition: all 0.15s;
   cursor: pointer;
   background: transparent;
   text-decoration: none;
@@ -84,7 +96,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .15s;
+  transition: all 0.15s;
   color: #202054;
   gap: 0.75rem;
   font-size: 1rem;
@@ -133,7 +145,6 @@ p {
 
   50% {
     transform: translateY(20px);
-
   }
 
   100% {
@@ -150,20 +161,20 @@ p {
   display: block;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding: 0 1.25rem;
     max-width: 900px;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .container {
     max-width: 700px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .container {
     height: auto;
   }

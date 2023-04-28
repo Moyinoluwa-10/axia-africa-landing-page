@@ -1,34 +1,48 @@
 <template>
   <section class="container">
-    <h1> Courses for you </h1>
-    <p> Here are some courses from our
-      schools that we offer. Enroll and kickstart your tech career.
+    <h1>Courses for you</h1>
+    <p>
+      Here are some courses from our schools that we offer. Enroll and kickstart your tech career.
     </p>
     <div class="wrapper">
-      <article class="card"><img class="card-image" src="../assets/images/course1.png" alt="image">
+      <article class="card">
+        <img class="card-image" src="../assets/images/course1.png" alt="image" />
         <div class="card-box">
           <h3>Product Design</h3>
-          <p>Design user
-            experiences for products in today’s digital world. Build a portfolio that showcases your ability to transform
-            products.</p><a href="#"><span>
-              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span></a>
+          <p>
+            Design user experiences for products in today’s digital world. Build a portfolio that
+            showcases your ability to transform products.
+          </p>
+          <a href="#"
+            ><span>
+              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span
+          ></a>
         </div>
       </article>
-      <article class="card"><img class="card-image" src="../assets/images/course2.png" alt="image">
+      <article class="card">
+        <img class="card-image" src="../assets/images/course2.png" alt="image" />
         <div class="card-box">
           <h3>Data Analytics</h3>
-          <p>Use Python,
-            SQL, and statistics to uncover insights, communicate critical findings, and create data-driven solutions</p><a
-            href="#"><span>
-              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span></a>
+          <p>
+            Use Python, SQL, and statistics to uncover insights, communicate critical findings, and
+            create data-driven solutions
+          </p>
+          <a href="#"
+            ><span>
+              Enroll Now <ion-icon name="arrow-forward-outline" class="icon"></ion-icon> </span
+          ></a>
         </div>
       </article>
-      <article class="card"><img class="card-image" src="../assets/images/course3.png" alt="image">
+      <article class="card">
+        <img class="card-image" src="../assets/images/course3.png" alt="image" />
         <div class="card-box">
           <h3>Front-End Development</h3>
-          <p>Begin our
-            front-end development program structured to help students launch a new career in web development.</p><a
-            href="#"><span>
+          <p>
+            Begin our front-end development program structured to help students launch a new career
+            in web development.
+          </p>
+          <a href="#"
+            ><span>
               Enroll Now
               <ion-icon name="arrow-forward-outline" class="icon"></ion-icon>
             </span>
@@ -41,7 +55,7 @@
 
 <script>
 export default {
-  name: "Courses"
+  name: 'Courses'
 }
 </script>
 
@@ -90,7 +104,7 @@ p {
   border: 3px solid #000;
   border-right-width: 0;
   bottom: -20px;
-  content: "";
+  content: '';
   height: 90%;
   left: -12px;
   position: absolute;
@@ -124,7 +138,7 @@ p {
 }
 
 .card-box a {
-  transition: all .15s;
+  transition: all 0.15s;
   color: #202054;
   display: flex;
   margin-top: 1rem;
@@ -154,8 +168,7 @@ p {
   --ionicon-stroke-width: 8px;
 }
 
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding: 0 1.25rem;
     max-width: 900px;
@@ -163,17 +176,16 @@ p {
 
   .wrapper {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .container {
     max-width: 700px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
   }
@@ -188,7 +200,7 @@ p {
   }
 
   .card-box {
-    padding: .875rem;
+    padding: 0.875rem;
   }
 
   .card-box h3 {
@@ -196,16 +208,14 @@ p {
   }
 
   .card-box p {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.25rem;
   }
-
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
   .wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-
   }
 }
 </style>

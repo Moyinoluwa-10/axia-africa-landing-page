@@ -13,6 +13,7 @@
   src: url(./fonts/Tiempos-Font/TiemposHeadline-Semibold.otf) format(opentype);
 }
 
+/* General Stylings */
 *,
 *::before,
 *::after {
@@ -36,6 +37,61 @@ body {
   scroll-behavior: smooth;
 }
 
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pad-cont {
+  padding: 0 150px;
+}
+
 h1 {
   font-family: 'Tiempos Headline', sans-serif;
+}
+
+.primary-heading {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.primary-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.15s;
+  cursor: pointer;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+  width: max-content;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .pad-cont {
+    padding: 0 1.25rem;
+  }
+
+  .primary-heading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
 }

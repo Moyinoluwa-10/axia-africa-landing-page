@@ -3,14 +3,15 @@
     <div class="container container--1">
       <header class="container">
         <a href="/" class="logo-box">
-          <img src="../assets/svgs/logo.a67befb6.svg" alt="logo">
+          <img src="../assets/svgs/logo.a67befb6.svg" alt="logo" />
         </a>
 
         <div class="wrapper">
           <a href="#onboard" class="nav-item"> About </a>
 
           <span to="#" class="nav-item box">
-            <p>Schools
+            <p>
+              Schools
               <ion-icon name=" chevron-down-sharp" class="icon"></ion-icon>
             </p>
             <div>
@@ -26,10 +27,11 @@
             </div>
           </span>
 
-          <button to="#" class="nav-item"> Join Our Community </button>
+          <button to="#" class="nav-item">Join Our Community</button>
 
           <span class="nav-item cont">
-            <p>Help
+            <p>
+              Help
               <ion-icon name="chevron-down-sharp" class="icon"></ion-icon>
             </p>
             <div>
@@ -50,22 +52,24 @@
         </div>
 
         <div class="hamburger" @click="toggleMobileMenu">
-          <ion-icon :name="isMobileMenuOpen ? 'close-outline' : 'menu-outline'" class="ham-icon btn-1"></ion-icon>
-
+          <ion-icon
+            :name="isMobileMenuOpen ? 'close-outline' : 'menu-outline'"
+            class="ham-icon btn-1"
+          ></ion-icon>
         </div>
       </header>
 
       <div :class="isMobileMenuOpen ? 'navbar active' : 'navbar'">
         <div class="navbar-box">
           <div>
-            <h1> SCHOOLS </h1>
+            <h1>SCHOOLS</h1>
             <a href="#"> School of Product</a>
             <a href="#"> School of Data </a>
             <a href="#"> School of Engineering </a>
           </div>
 
           <div>
-            <h1 class="font-bold"> COMPANY </h1>
+            <h1 class="font-bold">COMPANY</h1>
             <a aria-current="page" href="/#onboard"> About </a>
             <a href="#"> FAQs</a>
             <span to="#"> Join the Community </span>
@@ -73,7 +77,7 @@
           </div>
 
           <div>
-            <h1> HELP </h1>
+            <h1>HELP</h1>
             <a href="#">axiaafrica@gmail.com</a>
             <a href="#">09015558035</a>
           </div>
@@ -88,15 +92,14 @@ export default {
   name: 'Header',
   data() {
     return {
-      isMobileMenuOpen: false,
+      isMobileMenuOpen: false
     }
   },
   methods: {
     toggleMobileMenu() {
       this.isMobileMenuOpen = !this.isMobileMenuOpen
-    },
-  },
-
+    }
+  }
 }
 </script>
 
@@ -178,7 +181,7 @@ header .logo-box img {
   gap: 0.5rem;
 }
 
-.box>div>div {
+.box > div > div {
   align-items: flex-start;
   flex-direction: column;
   gap: 1.25rem;
@@ -190,33 +193,33 @@ header .logo-box img {
   display: none;
 }
 
-.box:hover>div>div {
+.box:hover > div > div {
   display: block;
 }
 
-.box>div>div>div {
+.box > div > div > div {
   background: #fffcf9;
   box-shadow: 0 4px 20px #0000001a;
   min-width: 1rem;
   padding: 0.75rem 1.5rem 0.75rem 1rem;
   width: -moz-max-content;
   width: max-content;
-  transition: all .15s;
+  transition: all 0.15s;
 }
 
-.box>div>div>div>div {
+.box > div > div > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.875rem;
 }
 
-.box>div>div>div>div>a {
+.box > div > div > div > div > a {
   color: inherit;
   text-decoration: none;
 }
 
-.wrapper>button {
+.wrapper > button {
   cursor: pointer;
   appearance: button;
   -webkit-appearance: button;
@@ -236,11 +239,11 @@ header .logo-box img {
   gap: 0.5rem;
 }
 
-.cont>div {
+.cont > div {
   position: relative;
 }
 
-.cont>div>div {
+.cont > div > div {
   align-items: flex-start;
   flex-direction: column;
   gap: 1.25rem;
@@ -252,28 +255,28 @@ header .logo-box img {
   display: none;
 }
 
-.cont:hover>div>div {
+.cont:hover > div > div {
   display: block;
 }
 
-.cont>div>div>div {
+.cont > div > div > div {
   background: #fffcf9;
   box-shadow: 0 4px 20px #0000001a;
   min-width: 1rem;
   padding: 0.75rem 1.5rem 0.75rem 1rem;
   width: -moz-max-content;
   width: max-content;
-  transition: all .15s;
+  transition: all 0.15s;
 }
 
-.cont>div>div>div>div {
+.cont > div > div > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.875rem;
 }
 
-.cont>div>div>div>div>a {
+.cont > div > div > div > div > a {
   color: inherit;
   text-decoration: none;
 }
@@ -300,7 +303,7 @@ header .logo-box img {
   font-weight: 600;
   line-height: 1.5rem;
   padding: 0.75rem 1.5rem;
-  transition: all .15s;
+  transition: all 0.15s;
   cursor: pointer;
   background: transparent;
   text-decoration: none;
@@ -332,54 +335,49 @@ header .logo-box img {
   margin-top: 45px;
 }
 
-.navbar-box>div {
+.navbar-box > div {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.navbar-box>div h1 {
+.navbar-box > div h1 {
   font-weight: 700;
   font-size: 1rem;
-  font-family: "Avenir", sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
 
-.navbar-box>div a {
+.navbar-box > div a {
   color: #000;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   text-decoration: none;
 }
 
-
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 900px;
   }
-
 
   .wrapper {
     display: none;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .container {
     max-width: 700px;
   }
-
-
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   nav {
     height: unset;
   }
 
   header {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, .05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     padding: 0 1.25rem;
   }
 
@@ -391,9 +389,8 @@ header .logo-box img {
     padding: 0;
   }
 
-
   .nav-item {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1rem;
   }
 
@@ -410,6 +407,3 @@ header .logo-box img {
   }
 }
 </style>
-
-
-

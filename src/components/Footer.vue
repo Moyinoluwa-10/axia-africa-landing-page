@@ -2,9 +2,11 @@
   <footer id="footer">
     <div class="container">
       <div class="box--1">
-        <img src="../assets/svgs/logo-white.4357a423.svg" alt="logo">
-        <p> An organization that is
-          focused on equipping African youths with the knowledge and skills needed in the tech space. </p>
+        <img src="../assets/svgs/logo-white.4357a423.svg" alt="logo" />
+        <p>
+          An organization that is focused on equipping African youths with the knowledge and skills
+          needed in the tech space.
+        </p>
         <div class="boxes">
           <a href="#" rel="noopener noreferrer" target="_blank">
             <ion-icon name="logo-linkedin" class="icon"></ion-icon>
@@ -19,14 +21,14 @@
 
         <div class="wrapper">
           <section class="cont">
-            <h1> SCHOOLS </h1>
+            <h1>SCHOOLS</h1>
             <a href="#"> School of Product </a>
             <a href="#"> School of Data </a>
             <a href="#"> School of Engineering </a>
           </section>
 
           <section class="cont">
-            <h1> COMPANY </h1>
+            <h1>COMPANY</h1>
             <a aria-current="page" href="#"> About </a>
             <a aria-current="page" href="#"> Blog </a><a href="#"> FAQs </a>
             <a href="#"> Join Our Community </a>
@@ -34,7 +36,7 @@
           </section>
 
           <section class="cont">
-            <h1> CONTACT </h1>
+            <h1>CONTACT</h1>
             <a href="#">axiaafrica@gmail.com</a>
             <a href="#">09015558035</a>
           </section>
@@ -52,8 +54,7 @@
           </section>
         </div>
 
-        <p class="top"> © 2023 Axia
-          Africa. All rights reserved. </p>
+        <p class="top">© 2023 Axia Africa. All rights reserved.</p>
       </div>
 
       <div class="box--2">
@@ -79,8 +80,8 @@
       </div>
     </div>
 
-    <p class="bottom center text-center w-full md:w-auto pc mt-32"> © 2023 Axia Africa. All rights
-      reserved.
+    <p class="bottom center text-center w-full md:w-auto pc mt-32">
+      © 2023 Axia Africa. All rights reserved.
     </p>
   </footer>
 </template>
@@ -183,7 +184,7 @@ footer {
 .cont a {
   font-weight: 500;
   color: #ebebeb;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   text-decoration: none;
 }
@@ -257,20 +258,20 @@ footer {
   text-decoration: none;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding: 0 1.25rem;
     max-width: 900px;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .container {
     max-width: 700px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   footer {
     padding: 3rem 1.25rem 3rem;
   }
@@ -300,7 +301,5 @@ footer {
   .bottom {
     display: none;
   }
-
 }
 </style>
-

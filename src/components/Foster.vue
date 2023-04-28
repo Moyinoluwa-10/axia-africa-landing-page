@@ -1,14 +1,18 @@
 <template>
   <section>
     <div class="container container--1">
-      <header>
-        Foster your tech knowledge </header>
+      <header>Foster your tech knowledge</header>
       <div class="container wrapper">
-        <img src="../assets/images/foster.96ed8018.png" alt="foster" class="desktop"><img
-          src="../assets/images/foster-sm.b91531e9.png" alt="foster" class="mobile">
-        <p> Don’t just wait
-          around, Register and join our students ready to enroll and kick start their tech career. </p><a href="#"> Apply
-          Now </a>
+        <img src="../assets/images/foster.96ed8018.png" alt="foster" class="desktop" /><img
+          src="../assets/images/foster-sm.b91531e9.png"
+          alt="foster"
+          class="mobile"
+        />
+        <p>
+          Don’t just wait around, Register and join our students ready to enroll and kick start
+          their tech career.
+        </p>
+        <a href="#"> Apply Now </a>
       </div>
     </div>
   </section>
@@ -72,7 +76,6 @@ p {
   max-width: 580px;
 }
 
-
 a {
   color: #fff;
   margin-top: 2px;
@@ -82,7 +85,7 @@ a {
   font-weight: 600;
   line-height: 1.5rem;
   padding: 0.75rem 1.5rem;
-  transition: all .15s;
+  transition: all 0.15s;
   cursor: pointer;
   background: transparent;
   text-decoration: none;
@@ -95,7 +98,7 @@ a:hover {
   box-shadow: 0 0 #0000, 0 0 #0000, 7px 7px 0px #f0b73f;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
     max-width: 900px;
@@ -104,16 +107,15 @@ a:hover {
   .container--1 {
     padding: 0 1.25rem;
   }
-
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
   .container {
     max-width: 700px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   section {
     padding: 5rem 0;
   }
